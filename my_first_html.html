@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<title>my first html</title>
+</head>
+<body>
+<p>hello world</p>
+<form action="quit()" method="get">
+    <p>
+        输入<kbd>quit</kbd>来退出
+        <input type="text">
+        <button onclick="quit()">Go</button>
+    </p>
+    <script>
+        function quit() {
+            window.alert("Please input again!");
+        }
+    </script>
+</form>
+</body>
+</html>
