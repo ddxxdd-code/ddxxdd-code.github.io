@@ -36,8 +36,7 @@ function changeImage()
     //window.alert("Change");
     element=document.getElementById('myimage');
     element.src="/images/pic_bulbon.gif";
-    setTimeout(sleep(),5000);
-    changeBackImage();
+    setTimeout(“changeBackImage()”,5000);
 }
 function changeBackImage()
 {
@@ -45,11 +44,8 @@ function changeBackImage()
     element=document.getElementById('myimage');
     element.src="/images/pic_bulboff.gif";
 }
-function sleep(){
-    window.alert("sleep");
-}
 </script>
-<img id="myimage" onclick="changeImage()" src="/images/pic_bulboff.gif" width="100" height="180">
+<img id="myimage" onclick="changeImage()" src="/images/pic_bulboff.gif " width="100" height="180">
 <p>点击灯泡就可以打开或关闭这盏灯</p>
 </body>
 </html>
