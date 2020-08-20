@@ -17,14 +17,14 @@
 function changeImage()
 {
     element=document.getElementById('myimage')
-    element.src="/images/pic_bulboff.gif";
+    element.src="/images/pic_bulbon.gif";
     var randTime = Math.round(Math.random()*300);
     setTimeout("changeBackImage()", randTime + 200);
 }
 function changeBackImage()
 {
     element=document.getElementById('myimage')
-    element.src="/images/pic_bulbon.gif";
+    element.src="/images/pic_bulboff.gif";
 }
 </script>
 <img id="myimage" onclick="changeImage()" src="/images/pic_bulboff.gif">
