@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh;en">
 <head>
     <meta charset="utf-8">
+    <meta name="author" content="Dedong Xie">
+    <meta name="time" content="2020-08-22">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
     <style type="text/css">
         .myDiv {
@@ -85,7 +87,7 @@
             }
             lightOn = 1;
             element=document.getElementById('myimage');
-            element.src="/images/pic_bulbon.gif";
+            element.src="images/pic_bulbon.gif";
             var randTime = Math.round(Math.random()*300);
             setTimeout("changeBackImage()", randTime + 400);
         }
@@ -93,17 +95,19 @@
         {
             lightOn = 0;
             element=document.getElementById('myimage');
-            element.src="/images/pic_bulboff.gif";
+            element.src="images/pic_bulboff.gif";
         }
         // Play sound from a calculator which means clear all(GuiLing(归零) in Chinese)
         function guiLing()
         {
-            var saudio = document.getElementById("clearSound");
+            var audio = document.getElementById("clearSound");
             audio.currentTime = 0;
             audio.play();
         }
     </script>
     <div class="myDiv">
+        <br>
+        <br>
         <p>让这个灯常亮</p>
         <p>点击开始开始计时</p>
         <p>
@@ -113,19 +117,22 @@
         <p>
         <button onclick="startGame()">开始</button>
         <button onclick="resetTimes()">归零</button>
-        <audio id="clearSound">
-            <source src="/audio/clear_sound.mp3" type="audio/mpeg">
-        </audio>
         </p>
-            <img id="myimage" onclick="changeImage()" src="/images/pic_bulboff.gif " width="100" height="180">
+        <audio id="clearSound">
+            <source src="audio/clear_sound.mp3" type="audio/mpeg"/>
+        </audio>
+        
+        <img id="myimage" onclick="changeImage()" src="/images/pic_bulboff.gif " width="100" height="180">
+
         <p>
             灯泡点亮时间(ms)：
             <p id="lightOnTime">0</p>
         </p>
         <p>点击灯泡以打开这盏灯</p>
         <p style="color:white">然后灯会随机熄灭</p>
+        
         <footer>
-            <a href="https://ddxxdd-code.github.io/index.html">donotpressthis</a>
+            <a href="https://github.com/ddxxdd-code/ddxxdd-code.github.io">donotpressthis</a>
         </footer>
     </div>
 </body>
