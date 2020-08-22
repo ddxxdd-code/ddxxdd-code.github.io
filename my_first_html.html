@@ -4,6 +4,11 @@
     <meta charset="utf-8">
         
     <style type="text/css">
+        .myDiv {
+          border: 5px;
+          background-color: ghostwhite;
+          text-align: center;
+        }
         p {
             font-family:times;
             text-align:center;
@@ -111,11 +116,13 @@
     <button onclick="startGame()">开始</button>
     <button onclick="resetTimes()">归零</button>
     </p>
+    <div class="myDiv">
+        <img id="myimage" onclick="changeImage()" src="/images/pic_bulboff.gif " width="100" height="180">
+    </div>
     <p>
         灯泡点亮时间(ms)：
         <p id="lightOnTime">0</p>
     </p>
-    <img id="myimage" onclick="changeImage()" src="/images/pic_bulboff.gif " width="100" height="180">
     <p>点击灯泡就可以打开或关闭这盏灯</p>
 </body>
 </html>
