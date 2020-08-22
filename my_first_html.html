@@ -4,48 +4,118 @@
     <meta charset="utf-8">
         
     <style type="text/css">
-      p {
-          font-family:times;
-          text-align:center;
-          margin-left:auto;
-          margin-right:auto;
-          width:30%;
-          height:20%;
-      }
+        p {
+            font-family:times;
+            text-align:center;
+            margin-left:auto;
+            margin-right:auto;
+            width:30%;
+            height:20%;
+        }
+        img {
+            margin-left:auto;
+            margin-right:auto;
+        }
     </style>
     
     <title>my first html</title>
 </head>
 <body>
-<p>hello world</p>
-<form>
-    <p>
-        输入<kbd>quit</kbd>来退出
-        <input type="text">
-        <button onclick="quit()">Go</button>
-    </p>
     <script>
-        function quit() {
-            window.alert("Please input again!");
+        var gameOn = 0;
+        function startGame()
+        {
+            if (gameOn == 0)
+            {
+                gameOn = 1;
+                countMicroSec();
+                countdown();
+            }
+        }
+        function countdown()
+        {
+            var t = document.getElementById("countdown").innerHTML;
+            if (t != 0 && gameOn == 1)
+            {
+                t -= 1;
+                document.getElementById("countdown").innerHTML = t;
+                setTimeout("countdown()", 1000);
+            }
+        }
+        var startTime = 20;
+        var lightOn = 0;
+        function resetTimes()
+        {
+            document.getElementById('lightOnTime').innerHTML = 0;
+            document.getElementById("countdown").innerHTML = startTime;
+        }
+        function countMicroSec()
+        {
+            var lightTime = document.getElementById('lightOnTime').innerHTML;
+            if (lightOn == 1)
+            {
+                lightTime = parseInt(lightTime, 10);
+                lightTime += 7;
+                document.getElementById('lightOnTime').innerHTML = lightTime;
+            }
+            
+            var t = document.getElementById("countdown").innerHTML;
+            if (t != 0)
+            {
+                setTimeout("countMicroSec()", 1);
+            }
+            else
+            {
+                var resultMessage = "你一共点亮灯泡"+lightTime+"ms";
+                window.alert(resultMessage);
+                gameOn = 0;
+            }
+        }
+        function changeImage()
+        {
+            if (gameOn == 0)
+            {
+                startGame();
+            }
+            lightOn = 1;
+            element=document.getElementById('myimage');
+            element.src="/images/pic_bulbon.gif";
+            var randTime = Math.round(Math.random()*300);
+            setTimeout("changeBackImage()", randTime + 400);
+        }
+        function changeBackImage()
+        {
+            lightOn = 0;
+            element=document.getElementById('myimage');
+            element.src="/images/pic_bulboff.gif";
         }
     </script>
-</form>
-<script>
-function changeImage()
-{
-    //window.alert("Change");
-    element=document.getElementById('myimage');
-    element.src="/images/pic_bulbon.gif";
-    //setTimeout(“changeBackImage()”,500);
-}
-function changeBackImage()
-{
-    window.alert("Change back");
-    element=document.getElementById('myimage');
-    element.src="/images/pic_bulboff.gif";
-}
-</script>
-<img id="myimage" onclick="changeImage()" src="/images/pic_bulboff.gif " width="100" height="180">
-<p>点击灯泡就可以打开或关闭这盏灯</p>
+    <p>hello world</p>
+    <form>
+        <p>
+            输入<kbd>quit</kbd>来退出
+            <input type="text">
+            <button onclick="quit()">Go</button>
+        </p>
+        <script>
+            function quit() {
+                window.alert("Please input again!");
+            }
+        </script>
+    </form>
+    <p>
+        剩余时间：
+        <p id="countdown">20</p>
+    </p>
+    <p>
+    <button onclick="startGame()">开始</button>
+    <button onclick="resetTimes()">归零</button>
+    </p>
+    <p>
+        灯泡点亮时间(ms)：
+        <p id="lightOnTime">0</p>
+    </p>
+    <img id="myimage" onclick="changeImage()" src="/images/pic_bulboff.gif " width="100" height="180">
+    <p>点击灯泡就可以打开或关闭这盏灯</p>
 </body>
 </html>
