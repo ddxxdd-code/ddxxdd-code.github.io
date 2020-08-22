@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+    <style type="text/css">
+        .myDiv {
+          border: 10%;
+          background-color: ghostwhite;
+          text-align:center;
+          margin-left:auto;
+          margin-right:auto;
+          width:90%;
+        }
+        p {
+            font-family:times;
+            font-size:15pt;
+            text-align:center;
+            margin-left:auto;
+            margin-right:auto;
+            width:40%;
+            height:30%;
+        }
+    </style>
+    
+    <title>my first html</title>
+</head>
+<body>
+    <script>
+        var gameOn = 0;
+        function startGame()
+        {
+            if (gameOn == 0)
+            {
+                gameOn = 1;
+                countMicroSec();
+                countdown();
+            }
+        }
+        function countdown()
+        {
+            var t = document.getElementById("countdown").innerHTML;
+            if (t != 0 && gameOn == 1)
+            {
+                t -= 1;
+                document.getElementById("countdown").innerHTML = t;
+                setTimeout("countdown()", 1000);
+            }
+        }
+        var startTime = 20;
+        var lightOn = 0;
+        function resetTimes()
+        {
+            guiLing();
+            document.getElementById('lightOnTime').innerHTML = 0;
+            document.getElementById("countdown").innerHTML = startTime;
+        }
+        function countMicroSec()
+        {
+            var lightTime = document.getElementById('lightOnTime').innerHTML;
+            if (lightOn == 1)
+            {
+                lightTime = parseInt(lightTime, 10);
+                lightTime += 7;
+                document.getElementById('lightOnTime').innerHTML = lightTime;
+            }
+            
+            var t = document.getElementById("countdown").innerHTML;
+            if (t != 0)
+            {
+                setTimeout("countMicroSec()", 1);
+            }
+            else
+            {
+                var resultMessage = "你一共点亮灯泡"+lightTime+"ms";
+                window.alert(resultMessage);
+                gameOn = 0;
+            }
+        }
+        function changeImage()
+        {
+            if (gameOn == 0)
+            {
+                startGame();
+            }
+            lightOn = 1;
+            element=document.getElementById('myimage');
+            element.src="/images/pic_bulbon.gif";
+            var randTime = Math.round(Math.random()*300);
+            setTimeout("changeBackImage()", randTime + 400);
+        }
+        function changeBackImage()
+        {
+            lightOn = 0;
+            element=document.getElementById('myimage');
+            element.src="/images/pic_bulboff.gif";
+        }
+        // Play sound from a calculator which means clear all(GuiLing(归零) in Chinese)
+        function guiLing()
+        {
+            var saudio = document.getElementById("clearSound");
+            audio.currentTime = 0;
+            audio.play();
+        }
+    </script>
+    <div class="myDiv">
+        <p>让这个灯常亮</p>
+        <p>点击开始开始计时</p>
+        <p>
+            剩余时间：
+            <p id="countdown">20</p>
+        </p>
+        <p>
+        <button onclick="startGame()">开始</button>
+        <button onclick="resetTimes()">归零</button>
+        <audio id="clearSound">
+            <source src="/audio/clear_sound.mp3" type="audio/mpeg">
+        </audio>
+        </p>
+            <img id="myimage" onclick="changeImage()" src="/images/pic_bulboff.gif " width="100" height="180">
+        <p>
+            灯泡点亮时间(ms)：
+            <p id="lightOnTime">0</p>
+        </p>
+        <p>点击灯泡以打开这盏灯</p>
+        <p style="color:white">然后灯会随机熄灭</p>
+        <footer>
+            <a href="https://ddxxdd-code.github.io/index.html">donotpressthis</a>
+        </footer>
+    </div>
+</body>
+</html>
