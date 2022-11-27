@@ -8,7 +8,7 @@ author_profile: true
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 
 ---
-Also see [dblp](https://dblp.org/pid/328/0339.html)  
+See full list on [DBLP](https://dblp.org/pid/328/0339.html)  
 
 ---
 **Optimizing half precision winograd convolution on arm many-core
