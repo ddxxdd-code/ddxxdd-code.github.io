@@ -12,6 +12,6 @@ processors &quot; <i>Proceedings of the 13th ACM SIGOPS Asia-Pacific Workshop on
 ---
 
 [paper](https://dl.acm.org/doi/10.1145/3546591.3547529)
-[prsentation](https://drive.google.com/file/d/1ORxEp1757ryRkBKi0_n2Xf5hA5iQAEOQ/view)
+[presentation](https://drive.google.com/file/d/1ORxEp1757ryRkBKi0_n2Xf5hA5iQAEOQ/view)
 [slides](https://docs.google.com/presentation/d/1ibfGc3yWNl4SP4UOipCfzmaHFQHd5lpF/edit#slide=id.p1)
 [code](http://academicpages.github.io/files/paper1.pdf)
