@@ -4,7 +4,7 @@ processors"
 collection: publications
 permalink: /publication/2022-08-Optimizing_half_precision_winograd.md
 excerpt: ""
-date: 2009-10-01
+date: 2022-8-24
 venue: 'APSys 2022'
 paperurl: 'http://academicpages.github.io/files/paper1.pdf'
 citation: 'Dedong Xie, Zhen Jia, Zili Zhang, and Xin Jin. (2022). &quot;Optimizing half precision winograd convolution on arm many-core
