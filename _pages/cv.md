@@ -7,6 +7,8 @@ redirect_from:
   - /resume
 ---
 
+**I'm not using this template for CV, instead I use a pdf version**
+
 {% include base_path %}
 
 Education
