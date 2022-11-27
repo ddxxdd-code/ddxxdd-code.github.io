@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 # About
-Hi there! I am a fourth year undergraduate student at University of Toronto, majoring in Mathematics and Computer Science. 
+Hi there! I am a fourth year undergraduate student at [University of Toronto](https://www.utoronto.ca/), majoring in Mathematics and Computer Science. 
 
 Currently, I am lucky to work with Prof. [Eyal de Lara](http://www.cs.toronto.edu/~delara/) on profiling memory usage in [OpenJ9 JVM](https://www.eclipse.org/openj9/).
 
