@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Dedong Xie (谢德东)"
   avatar           : "profile.jpg"
-  bio              : "Fourth year undergraduate student majoring in Mathematics and Computer Science."
-  location         : "Toronto, ON. Canada."
+  bio              : "2nd year Computer Science PhD student"
+  location         : "Seattle, WA. USA."
   employer         :
   pubmed           : 
   googlescholar    : 
-  email            : "dedong.xie@mail.utoronto.ca"
+  email            : "dedongx@cs.washington.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -103,7 +103,7 @@ author:
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : "https://www.linkedin.com/in/dedong-xie-547a501a8/"
-  orcid            : 
+  orcid            : "https://orcid.org/my-orcid?orcid=0009-0005-7324-6110"
   pinterest        :
   soundcloud       :
   stackoverflow    : 
