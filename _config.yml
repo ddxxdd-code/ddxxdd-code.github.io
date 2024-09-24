@@ -86,7 +86,7 @@ author:
   location         : "Seattle, WA. USA."
   employer         :
   pubmed           : 
-  googlescholar    : 
+  googlescholar    : "https://scholar.google.com/citations?user=pcPvXJsAAAAJ&hl=en"
   email            : "dedongx@cs.washington.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
