@@ -11,6 +11,8 @@ author_profile: true
 Also see [dblp](https://dblp.org/pid/328/0339.html)  
 
 ---
+**This page is NOT the publication tab on webpage, the publication in _pages is!!!**
+
 **Can Storage Devices be Power Adaptive?**  
 **Dedong Xie**, Theano Stavrinos, Kan Zhu, Simon Peter, Baris Kasikci, Thomas Anderson
 <span style="color:blue; font-style:italic">HotStorage 2024</span>  
