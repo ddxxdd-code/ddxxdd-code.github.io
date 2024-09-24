@@ -14,4 +14,6 @@ Currently, I am lucky to be advised by Prof. [Simon Peter](https://homes.cs.wash
 
 Before that, I got my Bachelor's degree from [University of Toronto](https://www.cs.toronto.edu/).
 
-My research interests are in the broad area of computer systems. Recently, I have been working in managing power consumption of storage devices in data centers [1](https://dl.acm.org/doi/10.1145/3655038.3665945).
+My research interests are in the broad area of computer systems. 
+
+Recently, I have been working on managing power consumption of storage devices in data centers [[1](https://dl.acm.org/doi/10.1145/3655038.3665945)].
