@@ -11,6 +11,11 @@ author_profile: true
 See full list on [DBLP](https://dblp.org/pid/328/0339.html)  
 
 ---
+**Can Storage Devices be Power Adaptive?**  
+**Dedong Xie**, Theano Stavrinos, Kan Zhu, Simon Peter, Baris Kasikci, Thomas Anderson
+<span style="color:blue; font-style:italic">HotStorage 2024</span>  
+[paper](https://dl.acm.org/doi/10.1145/3655038.3665945)
+
 **Optimizing half precision winograd convolution on arm many-core
 processors**  
 **Dedong Xie**, Zhen Jia, Zili Zhang, Xin Jin\
