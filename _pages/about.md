@@ -8,10 +8,10 @@ redirect_from:
   - /about.html
 ---
 
-Hi there! I am a fourth year undergraduate student at [University of Toronto](https://www.utoronto.ca/), majoring in Mathematics and Computer Science. 
+Hi there! I am a second year Computer Science PhD student at [University of Washington](https://cs.washington.edu/). 
 
-Currently, I am lucky to work with Prof. [Eyal de Lara](http://www.cs.toronto.edu/~delara/) on profiling memory usage in [OpenJ9 JVM](https://www.eclipse.org/openj9/).
+Currently, I am lucky to be advised by Prof. [Simon Peter](https://homes.cs.washington.edu/~simpeter/) and Prof. [Baris Kasikci](https://homes.cs.washington.edu/~baris/).
 
-Before that, I worked with Dr. [Zhen Jia](https://www.amazon.science/author/zhen-jia) and Prof. [Xin Jin](https://xinjin.github.io/) on optimizing FP16 Winograd convolution on Amazon Graviton-2 ARM many-core processor during my internship at [Amazon Web Services](https://aws.amazon.com/).
+Before that, I got my Bachelor's degree from [University of Toronto](https://www.cs.toronto.edu/)
 
-My research interests are in the broad area of computer systems.
+My research interests are in the broad area of computer systems. Recently, I have been working in managing power consumption of storage devices in data centers [1](https://dl.acm.org/doi/10.1145/3655038.3665945).
