@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Hi there! I am a second year Computer Science PhD student at [University of Washington](https://cs.washington.edu/). 
+Hi there! I am a third year Computer Science PhD student at [University of Washington](https://cs.washington.edu/). 
 
 Currently, I am lucky to be advised by Prof. [Simon Peter](https://homes.cs.washington.edu/~simpeter/) and Prof. [Baris Kasikci](https://homes.cs.washington.edu/~baris/).
 
